@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+
+    <style>
+
+        .widget {
+            padding: 5px 5px ;
+            color: #000000;
+            text-align: center;
+                max-width: 95%;
+            margin: auto;
+            font-variant-caps: petite-caps;
+            font-size: 2em;
+
+        }
+
+        div {
+             width: 95%;
+             min-height: 100px;
+
+            background:
+                linear-gradient(to right, black 4px, transparent 4px) 0 0,
+                linear-gradient(to right, black 4px, transparent 4px) 0 100%,
+                linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+                linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
+                linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
+                linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
+                linear-gradient(to top, black 4px, transparent 4px) 0 100%,
+                linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
+
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+}
+
+     
+    </style>
+</head>
+<body>
+
+    <div class="widget" id="widget"></div>
+
+
+<script>
+
+quotes=[
+"A crocodile cannot stick its tongue out.",
+"The shortest war in history was between Zanzibar and England, lasting only 38 minutes.",
+"A cockroach can live several weeks with its head cut off.",
+"The world's oldest piece of chewing gum is over 9,000 years old.",
+"The shortest complete sentence in the English language is 'I am.'",
+"The longest word in the English language is 189,819 letters long and is the chemical name for the protein, Titin.",
+"A group of flamingos is called a flamboyance.",
+"The tallest waterfall in the world is Angel Falls in Venezuela, measuring 979 meters (3,212 feet) tall.",
+"The average person will spend six months of their life waiting for red lights to turn green.",
+"A group of cats is called a clowder.",
+"The oldest piece of chewing gum in the United States is over 5,000 years old.",
+"The shortest scheduled flight in the world is between Westray and Papa Westray in Scotland, lasting only 1.7 miles and taking 2 minutes.",
+"The shortest verse in the Bible is John 11:35, which simply says 'Jesus wept.'",
+"The world's largest snowflake on record was 15 inches wide and 8 inches thick.",
+"A group of owls is called a parliament.",
+"The world's largest living organism is a fungus in Oregon that covers over 2,200 acres.",
+"A sneeze travels out of your mouth at over 100 miles per hour.",
+"The largest living organism in the world is a colony of honeybees.",
+"The longest time between two twins being born is 87 days.",
+"The tallest recorded person in history was 8 feet 11 inches tall.",
+"The average person spends six months of their lifetime waiting for red lights to turn green.",
+"The shortest war in history was fought between Britain and Zanzibar on August 27, 1896.",
+"The largest snowflake ever recorded was 15 inches wide and 8 inches thick.",
+"A group of crows is called a murder.",
+"There are more possible iterations of a game of chess than there are atoms in the known universe.",
+"The human nose can detect over 1 trillion different scents.",
+"A group of kangaroos is called a mob.",
+"The shortest commercial flight in the world is between Westray and Papa Westray in Scotland, taking only 2 minutes.",
+"The longest word in the English language that is not a technical term is 'antidisestablishmentarianism'.",
+"There are more possible ways to shuffle a deck of cards than there are stars in the Milky Way galaxy.",
+"The longest time between two twins being born is 87 days.",
+"The human brain contains over 100 billion neurons.",
+"A group of penguins in the water is called a raft.",
+"The largest living organism in the world is a 2.4-mile-wide fungus in Oregon.",
+"The shortest war in history lasted only 38 minutes between Britain and Zanzibar in 1896.",
+"The world's deepest postbox is in Susami Bay, Japan, and is located 10 meters underwater.",
+Here are the psychological biases with the name, short description, and fact:
+"Confirmation bias: The tendency to seek out information that confirms our preexisting beliefs. Fact: People tend to ignore information that contradicts their beliefs and overemphasize information that supports them.",
+"Availability heuristic: The tendency to overestimate the likelihood of events that come readily to mind. Fact: People often overestimate the risk of rare but highly publicized events, such as plane crashes or shark attacks.",
+"Anchoring bias: The tendency to rely too heavily on the first piece of information encountered when making decisions. Fact: The initial anchor can have a powerful effect on the final outcome.",
+"Self-serving bias: The tendency to attribute positive outcomes to oneself and negative outcomes to external factors. Fact: This bias can contribute to overconfidence and a lack of accountability.",
+"Hindsight bias: The tendency to believe, after an event has occurred, that one would have predicted or expected the outcome. Fact: This bias can lead to overconfidence in decision making and an underestimation of the role of chance.",
+"Fundamental attribution error: The tendency to overemphasize dispositional (internal) explanations for others' behavior and underemphasize situational (external) explanations. Fact: This bias can lead to misunderstandings and conflicts in interpersonal relationships.",
+"Negativity bias: The tendency to give more weight and attention to negative experiences and information than to positive ones. Fact: This bias can contribute to anxiety, depression, and a skewed perception of reality.",
+"Bandwagon effect: The tendency to conform to the opinions or behaviors of others in a group. Fact: This bias can lead to herd mentality and a lack of critical thinking.",
+"Confirmation bias: The tendency to seek out information that confirms our preexisting beliefs. Fact: People tend to ignore information that contradicts their beliefs and overemphasize information that supports them.",
+"Halo effect: The tendency to form a positive impression of someone based on one trait or characteristic. Fact: This bias can lead to overestimation of a person's abilities and an underestimation of their flaws.",
+"False consensus effect: The tendency to overestimate the degree to which others share our beliefs, values, and behaviors. Fact: This bias can lead to misunderstandings and conflict in interpersonal relationships.",
+"Sunk cost fallacy: The tendency to continue investing in a decision or project based on the resources already invested, regardless of the current or future value. Fact: This bias can lead to irrational decision making and an inability to cut losses.",
+"Neglect of probability: The tendency to disregard probability and focus solely on the potential consequences of an event. Fact: This bias can lead to irrational decision making and a failure to consider the likelihood of an outcome.",
+"Status quo bias: The tendency to prefer things to stay the same and avoid change. Fact: This bias can lead to resistance to innovation and progress.",
+"Reactance: The tendency to react negatively to attempts to restrict or control one's freedom. Fact: This bias can lead to defiance and a desire to do the opposite of what is expected.",
+"Confirmation bias: The tendency to seek out information that confirms our preexisting beliefs. Fact: People tend to ignore information that contradicts their beliefs and overemphasize information that supports them.",
+"Choice-supportive bias: The tendency to retroactively ascribe positive attributes to a chosen option and negative attributes to a rejected option. Fact: This bias can lead to a distorted perception of past decisions and a reluctance to change them.",
+"Machiavellianism: A personality trait characterized by manipulation and exploitation of others for personal gain. Fact: Individuals with high levels of Machiavellianism tend to be more successful in achieving their goals in competitive environments.",
+"Narcissism: A personality trait characterized by a grandiose sense of self-importance, a need for admiration, and a lack of empathy for others. Fact: Narcissists tend to have lower levels of emotional intelligence and have difficulty maintaining satisfying relationships.",
+"Psychopathy: A personality disorder characterized by a lack of empathy, impulsivity, and manipulative behavior. Fact: Psychopaths tend to engage in criminal behavior and have a higher risk of recidivism than other offenders.",
+"Bipolar disorder: A mood disorder characterized by alternating episodes of depression and mania. Fact: Bipolar disorder has a strong genetic component and can be effectively treated with medication and therapy.",
+"Borderline personality disorder: A personality disorder characterized by unstable emotions, impulsive behavior, and intense, unstable relationships. Fact: Borderline personality disorder is often misdiagnosed and can be effectively treated with dialectical behavior therapy.",
+"False uniqueness bias: The tendency to underestimate the commonality of one's abilities and one's desirable or successful behaviors, while overestimating their uniqueness or rarity. Fact: Studies have shown that people are more likely to attribute their positive traits and behaviors to internal factors (such as their abilities) than external factors (such as luck), and to believe that others would not have acted the same way in the same situation.",
+"Just-world hypothesis: The belief that people get what they deserve and deserve what they get, and that the world is fundamentally fair and just. Fact: This bias can lead people to blame victims for their misfortunes and to underestimate the impact of luck and privilege on success and failure.",
+"Actor-observer bias: The tendency to attribute one's own behavior to external factors (such as the situation or other people's actions) and other people's behavior to internal factors (such as their personality or character). Fact: This bias can lead to misunderstandings and conflicts in relationships, as people may attribute negative behavior in others to their personality rather than considering external factors.",
+"Fundamental attribution error: The tendency to overemphasize dispositional (internal) explanations for other people's behavior and to underestimate situational (external) explanations. Fact: This bias can lead to misunderstandings and stereotypes about other people, as people may assume that negative behavior in others is due to their personality rather than considering external factors.",
+"In-group bias: The tendency to favor and give preferential treatment to members of one's own group over members of other groups. Fact: This bias can lead to discrimination and prejudice against people who are perceived as being different, and can prevent people from seeing the strengths and value in diverse perspectives and experiences.",
+"Out-group homogeneity bias: The tendency to perceive members of out-groups as being more similar to each other than members of one's own group, and to overlook individual differences within out-groups. Fact: This bias can lead to stereotyping and prejudice against out-group members, as people may assume that they all share the same negative traits or characteristics."
+];
+
+const INTERVAL = 86400000;
+
+function dispalyQuote(){
+
+    document.getElementById('widget').innerHTML =quotes[0];
+    quotes.forEach((quote, i) => {
+        setTimeout(() => {
+            document.getElementById('widget').innerHTML =quote;
+        }, i * INTERVAL);  
+    });
+    }
+
+    function dispalyWidget() {
+        dispalyQuote();
+        setTimeout(dispalyWidget, quotes.length*INTERVAL);
+    }
+    dispalyWidget()
+
+</script>
+
+</body>
+</html>
